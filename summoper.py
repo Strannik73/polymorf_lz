@@ -3,7 +3,6 @@ import pandas as pd
 
 
 class sumop:
-
     def __init__(self, data): 
         self.data = data
         self.df = pd.read_csv('var3.csv')
@@ -11,7 +10,6 @@ class sumop:
     def __neg__(self):
         return  self.df.drop_duplicates()  
     
-
     def dann(self):
         self.df = sumop('var3.csv')
 
@@ -24,7 +22,6 @@ class sumop:
         self.df1.to_csv('df1.csv')
         self.df2.to_csv('df2.csv')
         
-
     def __del__(self):
         print('удаление')
 
